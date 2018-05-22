@@ -1,6 +1,7 @@
 # Swift 延迟1秒之后执行方法
 
 ## 1.使用perform方式
+
 ~~~
 	perform(#selector(doSomething), with: self, afterDelay: 1)
 	
@@ -18,6 +19,7 @@
 ~~~
 
 ## 3.使用定时器方式
+
 ~~~
 	Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(doSomething), userInfo: nil, repeats: false)
 
